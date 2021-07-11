@@ -1,0 +1,20 @@
+{
+  "name": "rollup-plugin-friendly-type-imports",
+  "version": "0.0.0-dev",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/fwouts/rollup-plugin-friendly-type-imports",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "release": "yarn build && yarn publish --non-interactive"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.53.1"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}

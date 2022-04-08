@@ -41,7 +41,7 @@ export = function fakeExportedTypesPlugin(
     name: "reactpreview-fake-exported-types",
     transform: async function (transformedCode, id) {
       const ext = path.extname(id);
-      if (ext.startsWith(".js")) {
+      if (ext !== ".ts" && ext !== ".tsx") {
         return;
       }
       const fileContent = await readFile(id);
